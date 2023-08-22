@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62,5;
+    font-family: 'Noto Sans', sans-serif;
+}
+/* Colores
+#4B5358 Gris
+#FCFCFC Blanco
+#fafa09 Amarillo
+*/
+
+    /* HEADER */
+header{ 
+    height: 90px;
+    background-color:#252729 ;
+    position: sticky;
+    top: 0px;
+}
+nav{
+    height: 100%;
+    font-size: 27px;    
+}
+.buscador{
+    background-color: #252729;
+    border-color:#4B5358;
+}
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+li{
+    list-style: none;
+}
+
+a{
+    color: #fafa09;
+    text-decoration: none;
+}
+.containerlogo{
+    height: 85px;
+}
+.logo{
+    height: 100%;
+    filter:invert(50%);
+
+}
+    /* Main */
+main{
+    background-color: #4B5358;
+}
+.cotainerImgTienda{
+    height: 550px;
+    width: 100%;
+}
+.imgTienda{
+    margin-left: 9%;
+    height: 100%;
+    width: 80%;
+
+}
+h1{
+    margin-top: 5px;
+    text-align: center;
+    background-color:black ;
+    color: #fafa09;
+
+}
+.separacion{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 20px;
+    margin-right: 20px;
+   }
+   
+.containerArticulo{
+    border: 2px solid #fafa09;
+    width: 400px;
+    height: 326px;
+    margin: 30px;
+}
+.containerimg{
+    width: 400px; 
+    height: 271px;
+}
+
+.imgcarta{
+    width: 100%;
+    height: 100%;
+}
+h2{
+    text-align: center;
+    background-color: #ededed;
+}
+
+.a{
+    text-align:center;
+    background-color: #ededed;
+}
+    /* FOOTER */
+.containerfooter{
+    height: 30px;
+    background-color: #ededed;
+    padding:10px;
+}
+.b{
+    text-align:center;
+    font-size: 17px;
+    height: 100%;
+}
+    /* SobreNosotros */
+.containerimgsn{
+    height: 800px;
+    width: 118rem;
+    display: flex;
+    justify-content: left;
+}
+.containerimgsn2{
+    height: 800px;
+    width: 118rem;
+    display: flex;
+    justify-content: right;
+}
+.imgsn{
+    margin: 20px;
+    height: 95%;
+    width: 700px;
+}
+.parrafo{
+    margin: 20px;
+}
+
+    /* Contacto */
+.nombre{
+    margin-top: 5rem;
+    margin-left: 5rem;
+    margin-bottom: 1rem;
+    background-color:#252729;
+}
+.apellido{
+    margin-top: 1rem;
+    margin-left: 5rem;
+    margin-bottom: 1rem;
+    background-color:#252729;
+}
+p{
+    display: flex;
+    justify-content: center;
+}
+.containerlogoig{
+    height: 85px;
+    display: flex;
+    justify-content: center;
+}
+.logoig{
+    height: 100%;
+}
