@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accesorios</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <!-- google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,71 +16,51 @@
 <body>
     <header>
         <nav>
-            <ul>
-                <div class="containerlogo">
-                    <img class="logo" src="../img/pngwing.com.png" alt="logo"></div>
-                <div><form action="get"></form>
-                    <input class="buscador" type="text" placeholder="Buscador"></div>
-                <li><a href="../pages/index.html">Inicio</a></li>
-                <li><a href="../pages/motos.html">Motos</a></li>
-                <li><a href="../pages/accesorios.html">Accesorios</a></li>
-                <li><a href="../pages/sobreNosotros.html">Sobre Nostros</a></li>
-                <li><a href="../pages/contacto.html">Contacto</a></li>
+            <ul class="container">
+                <div class="row">
+                    <img class="logo" src="../img/pngwing.com.png" alt="logo">
+                    <li class="col-12 col-md-2"><a class="ul"  href="../index.html">Inicio</a></li>
+                    <li class="col-12 col-md-2"><a class="ul"  href="../pages/motos.html">Motos</a></li>
+                    <li class="col-12 col-md-2"><a class="ul"  href="../pages/accesorios.html">Accesorios</a></li>
+                    <li class="col-12 col-md-2"><a class="ul"  href="../pages/sobreNosotros.html">Sobre Nostros</a></li>
+                    <li class="col-12 col-md-2"><a class="ul"  href="../pages/contacto.html">Contacto</a></li>
+                </div>
             </ul>
         </nav>
     </header>
     <main>
         <section>
-            <article>
-                <div class="separacion">
+            <article class="container">
+                <div class="row">
                     <div class="containerArticulo">
-                        <div class="containerimg"><img class=imgcarta src="../img/honda_cb750_hornet-2023.jpg" alt="imagenMoto"></div>
-                        <h2>Honda cb750</h2>
-                        <p class="a">15.999usd</p>
+                        <img class=imgcarta src="../img/honda_cb750_hornet-2023.jpg" alt="imagenMoto">
+                        <h2>Honda CB750</h2>
+                        <p class="a">$15.999USD</p>
                     </div>
                     <div class="containerArticulo">
-                        <div class="containerimg"><img class=imgcarta src="../img/honda_cb750_hornet-2023.jpg" alt="imagenMoto"></div>
-                        <h2>Honda cb750</h2>
-                        <p class="a">15.999usd</p>
-                    </div>
-                    <div class="containerArticulo">
-                        <div class="containerimg"><img class="imgcarta" src="../img/18837_medium.jpg" alt="imagenMoto"></div>
-                        <h2>Guantes Punto extremo</h2>
-                        <p class="a">4500$</p>
-                    </div>
-                </div>
-                <div class="separacion">
-                    <div class="containerArticulo">
-                        <div class="containerimg"><img class=imgcarta src="../img/31943_medium.jpg" alt="imagenMoto"></div>
+                        <img class=imgcarta src="../img/31943_medium.jpg" alt="imagen-de-guantes">
                         <h2>Guantes Nine to One</h2>
                         <p class="a">$12.000</p>
                     </div>
                     <div class="containerArticulo">
-                        <div class="containerimg"><img class=imgcarta src="../img/2104211800199886_01_medium.jpg" alt="imagenMoto"></div>
+                        <img class="imgcarta" src="../img/18837_medium.jpg" alt="imagen-de-guantes">
+                        <h2>Guantes Punto extremo</h2>
+                        <p class="a">$4500</p>
+                    </div>
+                    <div class="containerArticulo">
+                        <img class=imgcarta src="../img/2104211800199886_01_medium.jpg" alt="imagenMoto">
                         <h2>Guantes Nine to One v2</h2>
                         <p class="a">$13.000</p>
                     </div>
                     <div class="containerArticulo">
-                        <div class="containerimg"><img class=imgcarta src="../img/2104201325468541_01_medium.jpg" alt="imagenMoto"></div>
-                        <h2>Baul GIVI</h2>
-                        <p class="a">$70.000</p>
-                    </div>
-                </div>
-                <div class="separacion">
-                    <div class="containerArticulo">
-                        <div class="containerimg"><img class=imgcarta src="../img/honda_cb750_hornet-2023.jpg" alt="imagenMoto"></div>
-                        <h2>Honda cb750</h2>
-                        <p class="a">$15.999usd</p>
-                    </div>
-                    <div class="containerArticulo">
-                        <div class="containerimg"><img class=imgcarta src="../img/image-49.png" alt="imagenMoto"></div>
+                        <img class=imgcarta src="../img/image-49.png" alt="imagenMoto">
                         <h2>Guantes hawk</h2>
                         <p class="a">$6000</p>
                     </div>
                     <div class="containerArticulo">
-                        <div class="containerimg"><img class="imgcarta" src="../img/18837_medium.jpg" alt="imagenMoto"></div>
-                        <h2>Guantes Punto extremo</h2>
-                        <p class="a">$4500</p>
+                        <img class="imgcarta" src="../img/2104201325468541_01_medium.jpg" alt="imagen-baul-moto">
+                        <h2>Bauler GIVI</h2>
+                        <p class="a">$84.000</p>
                     </div>
             </article>
         </section>
@@ -87,6 +69,9 @@
         <div class="containerfooter">
             <p class="b">© 2023 Todos los derechos reservados</p>
         </div>
-    </footer>   
+    </footer>
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
