@@ -15,37 +15,40 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul class="container">
-                <div class="row">
-                    <img class="logo" src="../img/pngwing.com.png" alt="logo">
-                    <li class="col-12 col-md-2"><a class="ul"  href="../index.html">Inicio</a></li>
-                    <li class="col-12 col-md-2"><a class="ul"  href="../pages/motos.html">Motos</a></li>
-                    <li class="col-12 col-md-2"><a class="ul"  href="../pages/accesorios.html">Accesorios</a></li>
-                    <li class="col-12 col-md-2"><a class="ul"  href="../pages/sobreNosotros.html">Sobre Nostros</a></li>
-                    <li class="col-12 col-md-2"><a class="ul"  href="../pages/contacto.html">Contacto</a></li>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <div>
+                    <a class="navbar-brand" href="../index.html">
+                        <img class="logo" src="../img/pngwing.com.png" alt="imagenLogo">
+                    </a>
                 </div>
-            </ul>
-        </nav>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav space">
+                  <a class="nav-link active" aria-current="page" href="../pages/motos.html">Motos</a>
+                  <a class="nav-link" href="../pages/accesorios.html">Accesorios</a>
+                  <a class="nav-link" href="../pages/sobreNosotros.html">Nosotros</a>
+                  <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                </div>
+              </div>
+            </div>
+          </nav>
     </header>
     <main>
         <div>
-            <form >
+            <form class="">
                 <input class="nombre" type="text" placeholder="Nombre">
-            </form>
-
-            <form>
+                <label for="nombre"></label>
                 <input class="apellido type="text" placeholder="Apellido">
-            </form>
-            <form>
-                <input class="apellido" type="email" size="35" placeholder="E-mail" />                
-            </form>
-
-            <form>
+                <label for="apellido"></label>
+                <input class="apellido" type="email" size="35" placeholder="E-mail" />
+                <label for="email"></label>          
                 <textarea class="apellido" cols="70" rows="20" placeholder="Ingrese Comentario"></textarea>
-            </form>
-            <form>
+                <label for="comentario"></label>
                 <input class="apellido" type="submit" value="Enviar">
+                <label for="submit"></label>
             </form>
 
         </div>

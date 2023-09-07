@@ -15,37 +15,18 @@ html{
     /* HEADER */
 header{ 
     height: 90px;
-    background-color:#252729 ;
+    background-color:#575c61 ;
     position: sticky;
     top: 0px;
+    border: solid red 1px;
 }
 .logo{
-    width: 110px;
-    height: 90px;
-}
-li{
-    list-style: none;
-}
-.ul{
-    display: flex;
-    text-align: center;
-    font-size: 22px;
-    margin-top: 20px;
-    color: #fafa09;
-    text-decoration: none;
+    width: 90px;
+    height: 70px;
 }
     /* Main */
-main{
-    background-color: #252729;
-}
-.cotainerImgTienda{
-    height: 550px;
-    width: 100%;
-}
-.imgTienda{
-    height: 100%;
-    width: 100%;
-
+.red{
+    color: red;
 }
 h1{
     text-align: center;
@@ -69,23 +50,66 @@ h2{
     margin-bottom: 0px;
     height: 11%;
 }
-.a{
+h3{
+    text-align: center;
+}
+.c{
     text-align:center;
     background-color: #ededed;
     border: solid yellow 1px;
     height: 7%;
 }
+.center{
+    display: flex;
+    justify-content: center;
+}
     /* FOOTER */
-.containerfooter{
-    height: 30px;
-    background-color: #ededed;
-    padding:10px;
+.pie-pagina{
+    width: 100%;
+    background-color: #252729;
+    display: grid;
+    grid-template-columns: repeat(1 ,1fr);
+
 }
-.b{
-    text-align:center;
-    font-size: 17px;
+.box{
+    margin: 5px;
+    width: 100%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+h4{
+    color: #ededed;
+    font-size: 20px;
+    text-align: center;
+}
+.a{
+    text-decoration: none;
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #ededed;
+    margin-right: 5px;
+    background-color: #383b3d;
+    text-align: center;
+    transition: all 300ms ease;
+    margin-bottom: 5px;
+}
+.a:hover{
+    color: red;
+}
+.grupo-2{
+    height: 40px;
+    background-color: #313437;
+    color: #ededed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
     /* SobreNosotros */
 .containerimgsn{
     height: 800px;

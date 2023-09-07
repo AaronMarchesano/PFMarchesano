@@ -6,7 +6,8 @@
     <title>PreEntrega2Marchesano</title>
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <!-- google fonts-->
+    <!-- fonts -->
+    <script src="https://kit.fontawesome.com/1123d47580.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
@@ -15,50 +16,104 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul class="container">
-                <div class="row">
-                    <img class="logo" src="./img/pngwing.com.png" alt="logo">
-                    <li class="col-12 col-md-2"><a class="ul"  href="./index.html">Inicio</a></li>
-                    <li class="col-12 col-md-2"><a class="ul"  href="./pages/motos.html">Motos</a></li>
-                    <li class="col-12 col-md-2"><a class="ul"  href="./pages/accesorios.html">Accesorios</a></li>
-                    <li class="col-12 col-md-2"><a class="ul"  href="./pages/sobreNosotros.html">Sobre Nostros</a></li>
-                    <li class="col-12 col-md-2"><a class="ul"  href="./pages/contacto.html">Contacto</a></li>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid position">
+                <div>
+                    <a class="navbar-brand" href="../index.html">
+                        <img class="logo" src="../img/pngwing.com.png" alt="imagenLogo">
+                    </a>
                 </div>
-            </ul>
-        </nav>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav space">
+                  <a class="nav-link active" aria-current="page" href="../pages/motos.html">Motos</a>
+                  <a class="nav-link" href="../pages/accesorios.html">Accesorios</a>
+                  <a class="nav-link" href="../pages/sobreNosotros.html">Nosotros</a>
+                  <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                </div>
+              </div>
+            </div>
+          </nav>
     </header>
     <main>
-        <div class="cotainerImgTienda">
-            <img class="imgTienda" src="./img/Acara-motos.jpg" alt="imgTienda">
-        </div>
-        <h1>Productos Destacados</h1>
-        <section>
+        <h1>TIENDA</h1>
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/107_0s-0slides-motos-2023-xr150.jpg" class="d-block w-100" alt="XR150">
+              </div>
+              <div class="carousel-item">
+                <img src="https://motos.honda.com.ar/uploads/home/slides/63slide-lubricantes-hgo-actualizada.jpg" class="d-block w-100" alt="LubricanteHonda">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/60_5s-5slides-motos-2023-wave.jpg" class="d-block w-100" alt="Honda-Wave">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/162_1s-1slides-motos-2023-cb250.jpg" class="d-block w-100" alt="Honda-CB250">
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+            <h2>PRODUCTOS DESTACADOS</h2>
+          <section>
             <article class="container">
-                <div class="row">
-                    <div class="containerArticulo">
-                        <img class="imgcarta" src="./img/honda_cb750_hornet-2023.jpg" alt="imagenMoto">
-                        <h2>Honda CB750</h2>
-                        <p class="a">$15.999USD</p>
-                    </div>
-                    <div class="containerArticulo">
-                        <img class="imgcarta" src="./img/honda_cb750_hornet-2023.jpg" alt="imagenMoto">
-                        <h2>Honda CB750</h2>
-                        <p class="a">$15.999USD</p>
-                    </div>                    
-                    <div class="containerArticulo">
-                        <img class="imgcarta" src="./img/honda_cb750_hornet-2023.jpg" alt="imagenMoto">
-                        <h2>Honda CB750</h2>
-                        <p class="a">$15.999USD</p>
-                    </div>
+              <div class="row  center">
+                <div class="containerArticulo">
+                  <img class="imgcarta" src="https://www.honda.es/content/dam/central/motorcycles/colour-picker/street/cb750_hornet/cb750_hornet_2023/nh-b01_graphite_black/23YM_CB750_Hornet_Graphite_Black_NH-B01_RHS.png/_jcr_content/renditions/c4.png" alt="HONDA-CB750">
+                  <h3>Honda CB750</h3>
+                  <p class="c">$25.000USD</p>
+                </div>
+                <div class="containerArticulo">
+                  <img class="imgcarta" src="https://www.yamaha-motor.com.ar/images/productos/f013913c89280412941828a5072320f3_full_size.webp?660" alt="YAMAHA-NM-X">
+                  <h3>YAMAHA NM-X</h3>
+                  <p class="c">$15.999USD</p>
+                </div>                    
+                <div class="containerArticulo">
+                  <img class="imgcarta" src="https://www.yamaha-motor.com.ar/images/productos//colores/b474d4dd64246ccbea958e42b7ddd287.jpg" alt="imagenMoto">
+                  <h3>YAMAHA FZ-25</h3>
+                  <p class="c">$13.999USD</p>
+                </div>
+                <div class="containerArticulo">
+                  <img class="imgcarta" src="https://www.yamaha-motor.com.ar/images/productos//colores/0a873b2f4d51312e35996d8d29e596e2.jpg" alt="YZF-R3">
+                  <h3>YAMAHA YZF-R3</h3>
+                  <p class="c">$19.999USD</p>
+                </div>
+                <div class="containerArticulo">
+                  <img class="imgcarta" src="https://www.yamaha-motor.com.ar/images/productos//colores/512ea2ed08ba0f54e5e157b1bdcf7afa.png" alt="XTX-250">
+                  <h3>YAMAHA XTZ-250</h3>
+                  <p class="c">$7.999USD</p>
+                </div>
+                <div class="containerArticulo">
+                  <img class="imgcarta" src="https://www.honda.es/content/dam/local/spain/motorcycles/Images/Flyout/2022-09-modelos-23ym-con-carnet/1728x972_CMX500_ESPnew.png/jcr:content/renditions/m_r_w.webp" alt="HONDA-CMX-500">
+                  <h3>HONDA CMX500 REBEL</h3>
+                  <p class="c">$17.999USD</p>
+              </div>
                 </div>
             </article>
         </section>
     </main>
-    <footer>
-        <div class="containerfooter">
-            <p class="b">© 2023 Todos los derechos reservados</p>
+    <footer class="pie-pagina">
+        <div class="box">
+          <h4>REDES:</h4>
+          <div class="red-social">
+            <a href="https://www.facebook.com/" class="a fa fa-facebook"></a>
+            <a href="https://www.twitter.com" class="a fa fa-twitter"></a>
+            <a href="https://www.youtube.com" class="a fa fa-youtube"></a>
+            <a href="https://www.instagram.com/" class="a fa fa-instagram"></a>
+          </div>
         </div>
+      <div class="grupo-2">
+        <small>&copy; 2023 <b>Web Venta-Motos</b> - Todos Los Derechos Reservados.</small>
+      </div>
     </footer>
 
     <!-- bootstrap -->
