@@ -1,168 +1,198 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-html{
-    font-size: 62,5;
-    font-family: 'Noto Sans', sans-serif;
-}
-/* Colores
-#4B5358 Gris
-#FCFCFC Blanco
-#fafa09 Amarillo
-*/
 
-    /* HEADER */
-header{ 
-    height: 90px;
-    background-color:#575c61 ;
-    position: sticky;
-    top: 0px;
-    border: solid red 1px;
+html {
+  font-size: 62, 5;
+  font-family: "Noto Sans", sans-serif;
 }
-.logo{
-    width: 90px;
-    height: 70px;
-}
-    /* Main */
-.red{
-    color: red;
-}
-h1{
-    text-align: center;
-    background-color:black ;
-    color: #fafa09;
-}
-.containerArticulo{
-    border: 2px solid #fafa09;
-    width: 400px;
-    height: 400px;
-    margin: 10px;
-    padding: 0px;
-}
-.imgcarta{
-    width: 100%;
-    height: 82%;
-}
-h2{
-    text-align: center;
-    background-color: #ededed;
-    margin-bottom: 0px;
-    height: 11%;
-}
-h3{
-    text-align: center;
-}
-.c{
-    text-align:center;
-    background-color: #ededed;
-    border: solid yellow 1px;
-    height: 7%;
-}
-.center{
-    display: flex;
-    justify-content: center;
-}
-    /* FOOTER */
-.pie-pagina{
-    width: 100%;
-    background-color: #252729;
-    display: grid;
-    grid-template-columns: repeat(1 ,1fr);
 
+/* HEADER */
+.header-nav {
+  padding-left: 5%;
+  height: 90px;
+  background-color: #000000;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
 }
-.box{
-    margin: 5px;
-    width: 100%;
-    height: 100%;
+.header-nav .space {
+  margin-left: 20px;
+}
+.header-nav .space .nav-css {
+  color: rgb(255, 255, 255);
+  margin-left: 9%;
+  font-size: 1.4rem;
+}
+
+.logo {
+  width: 90px;
+  height: 70px;
+  filter: invert(10);
+}
+
+/*FIN HEADER*/
+/* MAIN */
+main {
+  background-color: #e4e4e4;
+}
+main .box-h1 {
+  padding: 20px;
+}
+main .box-h1 .h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .box-h1 .h1 h1 {
+  text-align: center;
+  margin-bottom: 0px;
+  height: 11%;
+}
+
+.container .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .row .card {
+  width: 380px;
+  height: 360px;
+  margin: 10px;
+  padding: 0px;
+}
+.container .row .card .imgcarta {
+  padding: 2rem;
+  width: 100%;
+  height: 81%;
+}
+.container .row .card h2 {
+  font-size: 1.4rem;
+  text-align: center;
+  border-top: solid #e4e4e4 1px;
+}
+.container .row .card .c {
+  text-align: center;
+  background-color: #ededed;
+  height: 9%;
+  margin-bottom: 0;
+  border-radius: 0.25rem;
+}
+
+/*FINAL MAIN*/
+/*FOOTER*/
+.footer {
+  width: 100%;
+  background-color: #000000;
+  display: grid;
+  grid-template-columns: repeat(1 0, 1fr);
+}
+.footer .box {
+  margin: 5px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .box h3 {
+  color: #ededed;
+  font-size: 1.4rem;
+}
+.footer .box .red-social .a {
+  text-decoration: none;
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #ededed;
+  margin-right: 5px;
+  background-color: #0e0f0f;
+  text-align: center;
+  transition: all 300ms ease;
+  margin-bottom: 5px;
+}
+.footer .box .red-social .a:hover {
+  color: red;
+}
+.footer .box-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  color: #ededed;
+  background-color: #0e0f0f;
+}
+
+@media (max-width: 767px) {
+  .nav-css {
+    background-color: #000000;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 10px;
+    width: 200px;
+  }
 }
-h4{
-    color: #ededed;
-    font-size: 20px;
-    text-align: center;
-}
-.a{
-    text-decoration: none;
-    display: inline-block;
-    width: 45px;
-    height: 45px;
-    line-height: 45px;
-    color: #ededed;
-    margin-right: 5px;
-    background-color: #383b3d;
-    text-align: center;
-    transition: all 300ms ease;
-    margin-bottom: 5px;
-}
-.a:hover{
-    color: red;
-}
-.grupo-2{
-    height: 40px;
-    background-color: #313437;
-    color: #ededed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* FINAL FOOTER*/
+/* SobreNosotros*/
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
 }
 
-
-    /* SobreNosotros */
-.containerimgsn{
-    height: 800px;
-    width: 118rem;
-    display: flex;
-    justify-content: left;
+.container {
+  padding: 30px;
 }
-.containerimgsn2{
-    height: 800px;
-    width: 118rem;
-    display: flex;
-    justify-content: right;
+.container .box-n {
+  margin: 40px;
 }
-.imgsn{
-    margin: 20px;
-    height: 95%;
-    width: 700px;
-}
-.parrafo{
-    margin: 20px;
+.container .box-n .lore {
+  font-weight: 500;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
-    /* Contacto */
-.nombre{
-    margin-top: 5rem;
-    margin-left: 5rem;
-    margin-bottom: 1rem;
-    background-color:#ffffff;
+/*Contacto*/
+.cont {
+  padding: 100px;
 }
-.apellido{
-    margin-top: 1rem;
-    margin-left: 5rem;
-    margin-bottom: 1rem;
-    background-color:#ffffff;
+.cont .form-group {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 35px;
 }
-.parrafo{
-    color: #ededed;
-    text-align: center;
+.cont .form-group label {
+  display: inline-block;
+  margin-bottom: 10px;
 }
-.containerlogoig{
-    height: 85px;
-    display: flex;
-    justify-content: center;
+.cont .form-group .form-input {
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
 }
-.logoig{
-    height: 100%;
+.cont .form-group .submit {
+  color: #ededed;
+  background-color: #007bff;
+  border: none;
+  border-radius: 0.25rem;
 }
-@media (max-width: 766px){
-    .ul{
-        color:#fafa09;
-        background-color: #252729;
-        font-size: 100%;
-        width: 25%;
-        justify-content: center;
-    }
+.cont .pad {
+  padding-top: 70px;
+  display: flex;
+  justify-content: center;
 }
+.cont .pad img {
+  height: 90%;
+  width: 80%;
+}
+
+/*# sourceMappingURL=estilos.css.map */

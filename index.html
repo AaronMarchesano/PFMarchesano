@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="En Aaron Motos Somos Líderes en Venta de Motos. Te llevás tu moto con financiamiento del 100% solo presentando tu DNI. Trabajamos con todas las marcas.">
+    <meta name="keywords" content="venta, moto, yamaha, honda, barata, accesorios, baul, indumentaria, dni, cuotas,financiamiento">
     <title>PreEntrega2Marchesano</title>
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
@@ -15,9 +17,9 @@
     <link rel="stylesheet" href="./css/estilos.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid position">
+    <header class="header-nav ">
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid">
                 <div>
                     <a class="navbar-brand" href="../index.html">
                         <img class="logo" src="../img/pngwing.com.png" alt="imagenLogo">
@@ -28,18 +30,17 @@
               </button>
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav space">
-                  <a class="nav-link active" aria-current="page" href="../pages/motos.html">Motos</a>
-                  <a class="nav-link" href="../pages/accesorios.html">Accesorios</a>
-                  <a class="nav-link" href="../pages/sobreNosotros.html">Nosotros</a>
-                  <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                  <a class="nav-css nav-link" href="../pages/motos.html">Motos</a>
+                  <a class="nav-css nav-link" href="../pages/accesorios.html">Accesorios</a>
+                  <a class="nav-css nav-link" href="../pages/sobreNosotros.html">Nosotros</a>
+                  <a class="nav-css nav-link" href="../pages/contacto.html">Contacto</a>
                 </div>
               </div>
             </div>
           </nav>
     </header>
     <main>
-        <h1>TIENDA</h1>
-        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleAutoplaying" class="container carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="./img/107_0s-0slides-motos-2023-xr150.jpg" class="d-block w-100" alt="XR150">
@@ -63,47 +64,52 @@
               </button>
             </div>
           </div>
-            <h2>PRODUCTOS DESTACADOS</h2>
+         <div class="box-h1">
+          <div class="h1">
+            <h1>DESTACADOS</h1>
+          </div>
+         </div> 
+
           <section>
             <article class="container">
-              <div class="row  center">
-                <div class="containerArticulo">
+              <div class="row">
+                <div class="card">
                   <img class="imgcarta" src="https://www.honda.es/content/dam/central/motorcycles/colour-picker/street/cb750_hornet/cb750_hornet_2023/nh-b01_graphite_black/23YM_CB750_Hornet_Graphite_Black_NH-B01_RHS.png/_jcr_content/renditions/c4.png" alt="HONDA-CB750">
-                  <h3>Honda CB750</h3>
+                  <h2>Honda CB750</h2>
                   <p class="c">$25.000USD</p>
                 </div>
-                <div class="containerArticulo">
+                <div class="card">
                   <img class="imgcarta" src="https://www.yamaha-motor.com.ar/images/productos/f013913c89280412941828a5072320f3_full_size.webp?660" alt="YAMAHA-NM-X">
-                  <h3>YAMAHA NM-X</h3>
+                  <h2>YAMAHA NM-X</h2>
                   <p class="c">$15.999USD</p>
                 </div>                    
-                <div class="containerArticulo">
+                <div class="card">
                   <img class="imgcarta" src="https://www.yamaha-motor.com.ar/images/productos//colores/b474d4dd64246ccbea958e42b7ddd287.jpg" alt="imagenMoto">
-                  <h3>YAMAHA FZ-25</h3>
+                  <h2>YAMAHA FZ-25</h2>
                   <p class="c">$13.999USD</p>
                 </div>
-                <div class="containerArticulo">
+                <div class="card">
                   <img class="imgcarta" src="https://www.yamaha-motor.com.ar/images/productos//colores/0a873b2f4d51312e35996d8d29e596e2.jpg" alt="YZF-R3">
-                  <h3>YAMAHA YZF-R3</h3>
+                  <h2>YAMAHA YZF-R3</h2>
                   <p class="c">$19.999USD</p>
                 </div>
-                <div class="containerArticulo">
+                <div class="card">
                   <img class="imgcarta" src="https://www.yamaha-motor.com.ar/images/productos//colores/512ea2ed08ba0f54e5e157b1bdcf7afa.png" alt="XTX-250">
-                  <h3>YAMAHA XTZ-250</h3>
+                  <h2>YAMAHA XTZ-250</h2>
                   <p class="c">$7.999USD</p>
                 </div>
-                <div class="containerArticulo">
+                <div class="card">
                   <img class="imgcarta" src="https://www.honda.es/content/dam/local/spain/motorcycles/Images/Flyout/2022-09-modelos-23ym-con-carnet/1728x972_CMX500_ESPnew.png/jcr:content/renditions/m_r_w.webp" alt="HONDA-CMX-500">
-                  <h3>HONDA CMX500 REBEL</h3>
+                  <h2>CMX500 REBEL</h2>
                   <p class="c">$17.999USD</p>
-              </div>
                 </div>
+              </div>
             </article>
         </section>
     </main>
-    <footer class="pie-pagina">
+    <footer class="footer">
         <div class="box">
-          <h4>REDES:</h4>
+          <h3>REDES:</h3>
           <div class="red-social">
             <a href="https://www.facebook.com/" class="a fa fa-facebook"></a>
             <a href="https://www.twitter.com" class="a fa fa-twitter"></a>
@@ -111,7 +117,7 @@
             <a href="https://www.instagram.com/" class="a fa fa-instagram"></a>
           </div>
         </div>
-      <div class="grupo-2">
+      <div class="box-2">
         <small>&copy; 2023 <b>Web Venta-Motos</b> - Todos Los Derechos Reservados.</small>
       </div>
     </footer>

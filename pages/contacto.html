@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
+    <meta name="description" content="No dudes en contactarnos">
+    <title>Contacto -Aaron Motos</title>
         <!-- bootstrap -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
         <!-- google fonts-->
+        <script src="https://kit.fontawesome.com/1123d47580.js" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
@@ -14,8 +16,8 @@
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg">
+    <header class="header-nav">
+        <nav class="navbar navbar-expand-md">
             <div class="container-fluid">
                 <div>
                     <a class="navbar-brand" href="../index.html">
@@ -27,43 +29,66 @@
               </button>
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav space">
-                  <a class="nav-link active" aria-current="page" href="../pages/motos.html">Motos</a>
-                  <a class="nav-link" href="../pages/accesorios.html">Accesorios</a>
-                  <a class="nav-link" href="../pages/sobreNosotros.html">Nosotros</a>
-                  <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                  <a class="nav-css nav-link" href="../pages/motos.html">Motos</a>
+                  <a class="nav-css nav-link" href="../pages/accesorios.html">Accesorios</a>
+                  <a class="nav-css nav-link" href="../pages/sobreNosotros.html">Nosotros</a>
+                  <a class="nav-css nav-link" href="../pages/contacto.html">Contacto</a>
                 </div>
               </div>
             </div>
           </nav>
     </header>
-    <main>
-        <div>
-            <form class="">
-                <input class="nombre" type="text" placeholder="Nombre">
-                <label for="nombre"></label>
-                <input class="apellido type="text" placeholder="Apellido">
-                <label for="apellido"></label>
-                <input class="apellido" type="email" size="35" placeholder="E-mail" />
-                <label for="email"></label>          
-                <textarea class="apellido" cols="70" rows="20" placeholder="Ingrese Comentario"></textarea>
-                <label for="comentario"></label>
-                <input class="apellido" type="submit" value="Enviar">
-                <label for="submit"></label>
-            </form>
+    <main >
+        <section class="container cont">
+          <div class="box-h1">
+            <div class="h1">
+                <h1 class="">Contacto</h1>
+        </div>
+        <h2>Tus datos</h2>
+            <div class="row">
+                <div class="col">
+                    <form action="include" method="post">
+                        <div class="form-group">
+                            <label for="Nombre">Nombre <span>*</span></label>
+                            <input class="form-input" type="text" placeholder="Nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="Apellido">Apellido <span>*</span></label>
+                            <input class="form-input" type="text" name="apellido" placeholder="Apellido" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="Email">Email <span>*</span></label>
+                            <input class="form-input" type="text" name="apellido" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="Mensaje">Mensaje<span>*</span></label>
+                            <textarea class="form-input" name="message" placeholder="Escriba su mensaje aqui"></textarea>
+                        </div>
+                        <div class="form-group">
+                          <input class="submit" type="submit" name="enviar" value="Enviar">
+                      </div>
+                    </form>
+                </div>
+                <div class="col-xl-6 col-md-12 pad">
+                    <img src="https://www.motofuturo.com.co/wp-content/uploads/elementor/thumbs/IMG_20210820_102622-scaled-pcg3yaym4e4xrmfesveq4q3hoc6dccg7d6c95i5z84.jpg" alt="Nuestra tienda">
+                </div>
+            </div>
 
-        </div>
-        
-            
-        
-        <div class="containerlogoig">
-            <p class="parrafo">Numero de Telefono: 44332211</p>
-            <a href="https://www.instagram.com" target="_blank"><img class="logoig" src="../img/instagram-png.png" alt="LogoInstagram"></a>
-        </div>
+        </section>
     </main>
-    <footer>
-        <div class="containerfooter">
-            <p class="b">© 2023 Todos los derechos reservados</p>
+    <footer class="footer">
+        <div class="box">
+          <h3>REDES:</h3>
+          <div class="red-social">
+            <a href="https://www.facebook.com/" class="a fa fa-facebook"></a>
+            <a href="https://www.twitter.com" class="a fa fa-twitter"></a>
+            <a href="https://www.youtube.com" class="a fa fa-youtube"></a>
+            <a href="https://www.instagram.com/" class="a fa fa-instagram"></a>
+          </div>
         </div>
+      <div class="box-2">
+        <small>&copy; 2023 <b>Aaron Motos</b> - Todos Los Derechos Reservados.</small>
+      </div>
     </footer>
     
     <!-- bootstrap -->
